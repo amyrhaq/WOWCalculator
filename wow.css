@@ -1,0 +1,128 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.wow_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+}
+/* billAmount */
+.wow_billAmount {
+	margin: 4px 0px 4px 0px;
+}
+/* tipPercent */
+.wow_tipPercent {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilebutton_5 */
+#wow_mobilebutton_5 {
+
+}
+.ui-btn.wow_mobilebutton_5 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegrid_6 */
+.wow_mobilegrid_6 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.wow_mobilegrid_6 > tr > td {
+	vertical-align: top;
+}
+.wow_mobilegrid_6_row_0, .wow_mobilegrid_6_row_0 > td {
+	height: 30px
+}
+.wow_mobilegrid_6_row_1, .wow_mobilegrid_6_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_7 */
+.wow_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.wow_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_11 */
+.wow_mobilelabel_11 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Gulim; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_8 */
+.wow_mobilegridcell_8 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.wow_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* tipAmount */
+.wow_tipAmount {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_9 */
+.wow_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.wow_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_14 */
+.wow_mobilelabel_14 {
+	text-decoration: none; font-weight: bold; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_10 */
+.wow_mobilegridcell_10 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.wow_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* billTotal */
+.wow_billTotal {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobileimage_16 */
+.wow_mobileimage_16 {
+	margin: 0px 0px 0px 100px;
+	width: 100px; height: 100px;
+	display: block;
+}
+/* html_17 */
+.wow_html_17 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 250px; height: 50px;
+}
+div.wow_html_17 {
+	overflow: auto;
+}
+/* mobilefooter1 */
+.wow_mobilefooter1 {
+	min-height:38px;
+}

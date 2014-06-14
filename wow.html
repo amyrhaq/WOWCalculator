@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            wow
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="wow" id="wow" class="type-interior"
+        data-theme="e">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="e" name="mobileheader1" id="wow_mobileheader1" class="wow_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    WOW Calculator
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="wow_mobilecontainer1" name="mobilecontainer1" class="wow_mobilecontainer1 ui-content"
+            dsid="mobilecontainer1" data-theme="e">
+                <link href="wow.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="wow.js">
+                </script>
+                <!-- billAmount -->
+                <div data-role="fieldcontain" class="wow_billAmount ">
+                    <input type="text" name="billAmount" dsid="billAmount" value="" placeholder="SUCH AMOUNT?"
+                    id="wow_billAmount" tabindex="1" multiple data-theme="e" class="wow_billAmount" />
+                </div>
+                <!-- tipPercent -->
+                <div data-role="fieldcontain" class="wow_tipPercent ">
+                    <select name="tipPercent" id="wow_tipPercent" dsid="tipPercent" data-theme="e" data-inline="false"
+                    data-mini="false" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
+                    tabindex="2" appery-class="wow_tipPercent">
+                        <option id="wow_tipPercent-0" value="10" reRender="tipPercent" dsid="tipPercent-0"
+                        selected="selected">
+                            10%
+                        </option>
+                        <option id="wow_tipPercent-1" value="15" reRender="tipPercent" dsid="tipPercent-1">
+                            15%
+                        </option>
+                        <option id="wow_tipPercent-2" value="20" reRender="tipPercent" dsid="tipPercent-2">
+                            20%
+                        </option>
+                        <option id="wow_tipPercent-3" value="100" reRender="tipPercent" dsid="tipPercent-3">
+                            WOW
+                        </option>
+                    </select>
+                </div>
+                <!-- mobilebutton_5 -->
+                <a data-role="button" name="mobilebutton_5" dsid="mobilebutton_5" class="wow_mobilebutton_5"
+                id="wow_mobilebutton_5" data-corners="true" data-icon="check" data-iconpos="left"
+                data-mini="false" data-theme="e" tabindex="3">
+                MUCH CALCULATE
+                </a>
+                <!-- mobilegrid_6 -->
+                <div class="wow_mobilegrid_6_wrapper" data-wrapper-for="mobilegrid_6">
+                    <table id="wow_mobilegrid_6" class="wow_mobilegrid_6" dsid="mobilegrid_6" name="mobilegrid_6"
+                    cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="wow_mobilegrid_6_row_0">
+                            <!-- mobilegridcell_7 -->
+                            <td id="wow_mobilegridcell_7" name="mobilegridcell_7" class="wow_mobilegridcell_7"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_11 -->
+                                    <div name="mobilelabel_11" id="wow_mobilelabel_11" dsid="mobilelabel_11" data-role="appery_label"
+                                    class="wow_mobilelabel_11">
+                                        Such Tip:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_8 -->
+                            <td id="wow_mobilegridcell_8" name="mobilegridcell_8" class="wow_mobilegridcell_8"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- tipAmount -->
+                                    <div name="tipAmount" id="wow_tipAmount" dsid="tipAmount" data-role="appery_label"
+                                    class="wow_tipAmount">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="wow_mobilegrid_6_row_1">
+                            <!-- mobilegridcell_9 -->
+                            <td id="wow_mobilegridcell_9" name="mobilegridcell_9" class="wow_mobilegridcell_9"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_14 -->
+                                    <div name="mobilelabel_14" id="wow_mobilelabel_14" dsid="mobilelabel_14" data-role="appery_label"
+                                    class="wow_mobilelabel_14">
+                                        Total Bill:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_10 -->
+                            <td id="wow_mobilegridcell_10" name="mobilegridcell_10" class="wow_mobilegridcell_10"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- billTotal -->
+                                    <div name="billTotal" id="wow_billTotal" dsid="billTotal" data-role="appery_label"
+                                    class="wow_billTotal">
+                                        WOW
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobileimage_16 -->
+                <img class="wow_mobileimage_16" src="files/views/assets/image/twist.gif" id="wow_mobileimage_16"
+                dsid="mobileimage_16" name="mobileimage_16" />
+                <!-- html_17 -->
+                <div data-role="appery_html" name="html_17" dsid="html_17" id="wow_html_17" class="wow_html_17">
+                    <!DOCTYPE html>
+                    <html>
+                        
+                        <body>
+                            <script src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button"
+                            type="text/javascript" data-key="OY1Hg+2RGqa2kuL8xm3w1AHXTNz1WS7orGnD2W5PLw+2TmkiEx"
+                            data-redirect="http://cdn.memegenerator.net/instances/500x/43477056.jpg" data-label="DONATE "
+                            data-name="Donation to Amyr" data-description="To keep Amyr well-fed" data-amount="1.25"
+                            data-guest-checkout="true" data-type="freetype">
+                            </script>
+                        </body>
+                    
+                    </html>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="wow_mobilefooter1" name="mobilefooter1"
+            dsid="mobilefooter1" id="wow_mobilefooter1" data-theme="e">
+            </div>
+        </div>
+    </body>
+
+</html>
